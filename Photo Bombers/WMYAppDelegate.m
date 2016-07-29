@@ -7,13 +7,46 @@
 //
 
 #import "WMYAppDelegate.h"
+#import "WMYPhotosViewController.h"
+
+#import <SSkeychain/SSKeychain.h>
+#import <SimpleAuth/SimpleAuth.h>
 
 @implementation WMYAppDelegate
+- (void)customizeAppearance {
+    // set the color of UISearchbar in WMYPhotosViewController
+    UIColor *barTintColor = [UIColor redColor];
+    [[UISearchBar appearance]setBarTintColor:barTintColor];
+    
+    self.window.tintColor = [UIColor redColor];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // specify how the keychain can be accessed
+    [SSKeychain setAccessibilityType:kSecAttrAccessibleWhenUnlocked];
+    
+ 
+    
+    SimpleAuth.configuration[@"instagram"] = @{ @"client_id" : @"33be8e59e9dd43b6a5f368da16c2d4bf",
+                                                SimpleAuthRedirectURIKey : @"photobombers://auth/instagram"
+                                                 };
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    [self customizeAppearance];
+    
+    WMYPhotosViewController *photosViewController = [[WMYPhotosViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:photosViewController];
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    // Set navigation Bar title color using the apprearance proxy
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorWithRed:198.0/ 255.0 green:26.0/ 255.0 blue:131.0/255.0 alpha:1.0]];
+    [[UINavigationBar appearance]setBarStyle:UIBarStyleBlackOpaque];
+
+    
+    
+    self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
