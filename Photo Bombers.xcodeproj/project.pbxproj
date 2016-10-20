@@ -48,8 +48,8 @@
 		0E69F2F134DE80E8895FBA29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A400AE8627BFF8332D12832 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		44C966C84B503213D8C38583 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		903EEDE41B4570060062D782 /* WMYExtraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYExtraView.h; sourceTree = "<group>"; };
-		903EEDE51B4570060062D782 /* WMYExtraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYExtraView.m; sourceTree = "<group>"; };
+		903EEDE41B4570060062D782 /* WMYExtraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYExtraView.h; path = View/WMYExtraView.h; sourceTree = "<group>"; };
+		903EEDE51B4570060062D782 /* WMYExtraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYExtraView.m; path = View/WMYExtraView.m; sourceTree = "<group>"; };
 		909811581B3B22CC00747A5C /* Photo Bombers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Bombers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9098115B1B3B22CC00747A5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9098115D1B3B22CC00747A5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,26 +66,26 @@
 		9098117C1B3B22CC00747A5C /* Photo BombersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Photo BombersTests-Info.plist"; sourceTree = "<group>"; };
 		9098117E1B3B22CC00747A5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		909811801B3B22CC00747A5C /* Photo_BombersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo_BombersTests.m; sourceTree = "<group>"; };
-		9098118A1B3B236400747A5C /* WMYPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYPhotosViewController.h; sourceTree = "<group>"; };
-		9098118B1B3B236400747A5C /* WMYPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYPhotosViewController.m; sourceTree = "<group>"; };
-		9098118D1B3C308B00747A5C /* WMYPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYPhotoCell.h; sourceTree = "<group>"; };
-		9098118E1B3C308B00747A5C /* WMYPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYPhotoCell.m; sourceTree = "<group>"; };
+		9098118A1B3B236400747A5C /* WMYPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYPhotosViewController.h; path = "View Controllers/WMYPhotosViewController.h"; sourceTree = "<group>"; };
+		9098118B1B3B236400747A5C /* WMYPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYPhotosViewController.m; path = "View Controllers/WMYPhotosViewController.m"; sourceTree = "<group>"; };
+		9098118D1B3C308B00747A5C /* WMYPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYPhotoCell.h; path = Cell/WMYPhotoCell.h; sourceTree = "<group>"; };
+		9098118E1B3C308B00747A5C /* WMYPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYPhotoCell.m; path = Cell/WMYPhotoCell.m; sourceTree = "<group>"; };
 		909811911B3C66F400747A5C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90B768671B4B10530083F2EE /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		90B7686F1B4C08060083F2EE /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
 		90B768711B4C15300083F2EE /* pink comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pink comment.png"; sourceTree = "<group>"; };
-		90B768731B4D8D7B0083F2EE /* WMYTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYTopViewController.h; sourceTree = "<group>"; };
-		90B768741B4D8D7B0083F2EE /* WMYTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYTopViewController.m; sourceTree = "<group>"; };
+		90B768731B4D8D7B0083F2EE /* WMYTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYTopViewController.h; path = "View Controllers/WMYTopViewController.h"; sourceTree = "<group>"; };
+		90B768741B4D8D7B0083F2EE /* WMYTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYTopViewController.m; path = "View Controllers/WMYTopViewController.m"; sourceTree = "<group>"; };
 		90C540CA1B3DC13E008DD278 /* WMYPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYPhotoController.h; sourceTree = "<group>"; };
 		90C540CB1B3DC13E008DD278 /* WMYPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYPhotoController.m; sourceTree = "<group>"; };
-		90C540CD1B3DC751008DD278 /* WMYDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYDetailViewController.h; sourceTree = "<group>"; };
-		90C540CE1B3DC751008DD278 /* WMYDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYDetailViewController.m; sourceTree = "<group>"; };
-		90C540D01B3DDF61008DD278 /* WMYPresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYPresentDetailTransition.h; sourceTree = "<group>"; };
-		90C540D11B3DDF61008DD278 /* WMYPresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYPresentDetailTransition.m; sourceTree = "<group>"; };
-		90C540D31B3DE3E8008DD278 /* WMYDismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYDismissDetailTransition.h; sourceTree = "<group>"; };
-		90C540D41B3DE3E8008DD278 /* WMYDismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYDismissDetailTransition.m; sourceTree = "<group>"; };
-		90D94EB01B443DEB00BD27F4 /* WMYAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMYAnimator.h; sourceTree = "<group>"; };
-		90D94EB11B443DEB00BD27F4 /* WMYAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMYAnimator.m; sourceTree = "<group>"; };
+		90C540CD1B3DC751008DD278 /* WMYDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYDetailViewController.h; path = "View Controllers/WMYDetailViewController.h"; sourceTree = "<group>"; };
+		90C540CE1B3DC751008DD278 /* WMYDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYDetailViewController.m; path = "View Controllers/WMYDetailViewController.m"; sourceTree = "<group>"; };
+		90C540D01B3DDF61008DD278 /* WMYPresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYPresentDetailTransition.h; path = Transition/WMYPresentDetailTransition.h; sourceTree = "<group>"; };
+		90C540D11B3DDF61008DD278 /* WMYPresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYPresentDetailTransition.m; path = Transition/WMYPresentDetailTransition.m; sourceTree = "<group>"; };
+		90C540D31B3DE3E8008DD278 /* WMYDismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYDismissDetailTransition.h; path = Transition/WMYDismissDetailTransition.h; sourceTree = "<group>"; };
+		90C540D41B3DE3E8008DD278 /* WMYDismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYDismissDetailTransition.m; path = Transition/WMYDismissDetailTransition.m; sourceTree = "<group>"; };
+		90D94EB01B443DEB00BD27F4 /* WMYAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMYAnimator.h; path = Transition/WMYAnimator.h; sourceTree = "<group>"; };
+		90D94EB11B443DEB00BD27F4 /* WMYAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMYAnimator.m; path = Transition/WMYAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +127,7 @@
 			children = (
 				909811911B3C66F400747A5C /* Podfile */,
 				909811611B3B22CC00747A5C /* Photo Bombers */,
+				909811621B3B22CC00747A5C /* Supporting Files */,
 				9098117A1B3B22CC00747A5C /* Photo BombersTests */,
 				9098115A1B3B22CC00747A5C /* Frameworks */,
 				909811591B3B22CC00747A5C /* Products */,
@@ -158,31 +159,18 @@
 		909811611B3B22CC00747A5C /* Photo Bombers */ = {
 			isa = PBXGroup;
 			children = (
+				909D44131DB87FA5001BA9BC /* Cell */,
+				909D44121DB87F82001BA9BC /* Transition */,
+				909D44111DB87F64001BA9BC /* View */,
+				909D44101DB87F36001BA9BC /* View Controllers */,
 				9098116A1B3B22CC00747A5C /* WMYAppDelegate.h */,
 				9098116B1B3B22CC00747A5C /* WMYAppDelegate.m */,
-				90B768731B4D8D7B0083F2EE /* WMYTopViewController.h */,
-				90B768741B4D8D7B0083F2EE /* WMYTopViewController.m */,
 				9098116D1B3B22CC00747A5C /* Images.xcassets */,
 				90B7686F1B4C08060083F2EE /* like.png */,
 				90B768671B4B10530083F2EE /* shadow.png */,
 				90B768711B4C15300083F2EE /* pink comment.png */,
-				909811621B3B22CC00747A5C /* Supporting Files */,
-				9098118A1B3B236400747A5C /* WMYPhotosViewController.h */,
-				9098118B1B3B236400747A5C /* WMYPhotosViewController.m */,
-				9098118D1B3C308B00747A5C /* WMYPhotoCell.h */,
-				9098118E1B3C308B00747A5C /* WMYPhotoCell.m */,
 				90C540CA1B3DC13E008DD278 /* WMYPhotoController.h */,
 				90C540CB1B3DC13E008DD278 /* WMYPhotoController.m */,
-				90C540CD1B3DC751008DD278 /* WMYDetailViewController.h */,
-				90C540CE1B3DC751008DD278 /* WMYDetailViewController.m */,
-				90C540D01B3DDF61008DD278 /* WMYPresentDetailTransition.h */,
-				90C540D11B3DDF61008DD278 /* WMYPresentDetailTransition.m */,
-				90C540D31B3DE3E8008DD278 /* WMYDismissDetailTransition.h */,
-				90C540D41B3DE3E8008DD278 /* WMYDismissDetailTransition.m */,
-				90D94EB01B443DEB00BD27F4 /* WMYAnimator.h */,
-				90D94EB11B443DEB00BD27F4 /* WMYAnimator.m */,
-				903EEDE41B4570060062D782 /* WMYExtraView.h */,
-				903EEDE51B4570060062D782 /* WMYExtraView.m */,
 			);
 			path = "Photo Bombers";
 			sourceTree = "<group>";
@@ -196,6 +184,7 @@
 				909811691B3B22CC00747A5C /* Photo Bombers-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = "Photo Bombers";
 			sourceTree = "<group>";
 		};
 		9098117A1B3B22CC00747A5C /* Photo BombersTests */ = {
@@ -214,6 +203,50 @@
 				9098117D1B3B22CC00747A5C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		909D44101DB87F36001BA9BC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90B768731B4D8D7B0083F2EE /* WMYTopViewController.h */,
+				90B768741B4D8D7B0083F2EE /* WMYTopViewController.m */,
+				9098118A1B3B236400747A5C /* WMYPhotosViewController.h */,
+				9098118B1B3B236400747A5C /* WMYPhotosViewController.m */,
+				90C540CD1B3DC751008DD278 /* WMYDetailViewController.h */,
+				90C540CE1B3DC751008DD278 /* WMYDetailViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		909D44111DB87F64001BA9BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				903EEDE41B4570060062D782 /* WMYExtraView.h */,
+				903EEDE51B4570060062D782 /* WMYExtraView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		909D44121DB87F82001BA9BC /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				90C540D01B3DDF61008DD278 /* WMYPresentDetailTransition.h */,
+				90C540D11B3DDF61008DD278 /* WMYPresentDetailTransition.m */,
+				90C540D31B3DE3E8008DD278 /* WMYDismissDetailTransition.h */,
+				90C540D41B3DE3E8008DD278 /* WMYDismissDetailTransition.m */,
+				90D94EB01B443DEB00BD27F4 /* WMYAnimator.h */,
+				90D94EB11B443DEB00BD27F4 /* WMYAnimator.m */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+		909D44131DB87FA5001BA9BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9098118D1B3C308B00747A5C /* WMYPhotoCell.h */,
+				9098118E1B3C308B00747A5C /* WMYPhotoCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +296,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WMY;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Mingyuan Wang";
 				TargetAttributes = {
 					909811721B3B22CC00747A5C = {
@@ -415,13 +448,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -434,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -453,20 +492,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -480,6 +524,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
 				INFOPLIST_FILE = "Photo Bombers/Photo Bombers-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "UTDallas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -493,6 +538,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
 				INFOPLIST_FILE = "Photo Bombers/Photo Bombers-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "UTDallas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,6 +560,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Photo BombersTests/Photo BombersTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "UTDallas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -532,6 +579,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
 				INFOPLIST_FILE = "Photo BombersTests/Photo BombersTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "UTDallas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

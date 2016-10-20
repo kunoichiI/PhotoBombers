@@ -54,6 +54,7 @@
     if (self.accessToken == nil) {
         [SimpleAuth authorize:@"instagram" options: @{@"scope":@[@"likes"] } completion:^(NSDictionary *responseObject, NSError *error) {
             self.accessToken = responseObject[@"credentials"][@"token"];
+            NSLog(@"The accessToken is: %@", self.accessToken);
             [SSKeychain passwordForService:@"InstagramService" account:@"com.photobombers.keychain"];
             [self refresh];
             
@@ -76,7 +77,7 @@
 #pragma mark - helper method
 - (void) refresh {
     NSURLSession *session = [NSURLSession sharedSession];
-    NSString *urlString = [[NSString alloc]initWithFormat:@"https://api.instagram.com/v1/tags/photobomb/media/recent?access_token=%@", self.accessToken];
+    NSString *urlString = [[NSString alloc]initWithFormat:@"https://api.instagram.com/v1/tags/zach/media/recent?access_token=%@", self.accessToken];
     NSURL *url = [[NSURL alloc]initWithString:urlString];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
@@ -84,6 +85,7 @@
         NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data
                                                                            options:kNilOptions error:nil];
         self.photos = [responseDictionary valueForKeyPath:@"data"];
+         NSLog(@"The content is :%@", self.photos); // It is null now, what happened in retrieving data step?
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData];

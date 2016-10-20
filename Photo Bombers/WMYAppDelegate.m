@@ -29,7 +29,7 @@
  
     
     SimpleAuth.configuration[@"instagram"] = @{ @"client_id" : @"33be8e59e9dd43b6a5f368da16c2d4bf",
-                                                SimpleAuthRedirectURIKey : @"photobombers://auth/instagram"
+                                                SimpleAuthRedirectURIKey : @"http://photobombers://auth/instagram"
                                                  };
     
     
